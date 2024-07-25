@@ -1,9 +1,10 @@
+import HomeLayout from "./Components/HomeLayout"
 
 
 const App = () => {
   return (
    <>
-   
+    <HomeLayout />
    </>
   )
 }
