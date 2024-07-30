@@ -1,8 +1,8 @@
 import { account, ID } from "../server/Server";
 
-export const signup = async (email , password) => {
+export const signup = async (email , password , name) => {
     try{
-        const res = await account.create(ID.unique() , email , password);
+        const res = await account.create(ID.unique() , email , password  , name );
         return res;
     }
     catch(e){
